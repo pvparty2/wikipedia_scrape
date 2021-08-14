@@ -3,7 +3,6 @@
     https://www.freecodecamp.org/news/scraping-wikipedia-articles-with-python/
 '''
 
-import requests
 from bs4 import BeautifulSoup
 import random
 
