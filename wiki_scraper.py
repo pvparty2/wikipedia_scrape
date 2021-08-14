@@ -40,6 +40,6 @@ def wiki_scraper(wiki_url='/wiki/') -> None:
 
 
 if __name__ == '__main__':
-    wiki_scraper('dodo')
+    wiki_scraper()
     
     

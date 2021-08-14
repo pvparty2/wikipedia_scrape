@@ -12,12 +12,9 @@ class UseWikiScraper:
 
 
     def __enter__(self):
-        try:
-            self.response = requests.get(self.wiki_url)
-            self.response.raise_for_status()
-            return self.response
-        except Exception as err:
-            raise SystemExit(err.__class__, err.__traceback__, err)
+        self.response = requests.get(self.wiki_url)
+        self.response.raise_for_status()
+        return self.response
         
     
     def __exit__(self, exc_type, exc_value, exc_trace) -> None:
